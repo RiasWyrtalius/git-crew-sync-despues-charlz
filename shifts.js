@@ -8,7 +8,7 @@ function calculatePay(hours, rate) {
   }
   const regularPay = 8 * rate;
   const overtimePay = (hours - 8) * rate * 1.5;
-  return Math.round(regularPay + (overtimePay * 1.0));
+  return Math.round(regularPay + overtimePay);
 }
 
 module.exports = { isValidShift, calculatePay };
